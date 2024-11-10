@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/hp/Projectsss/nyc%20trip%20duration/mlruns/0/177a1727bb88416ca58a8e6fb4718f34/artifacts
+end_time: 1731238988556
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 177a1727bb88416ca58a8e6fb4718f34
+run_name: XGBRegressor
+run_uuid: 177a1727bb88416ca58a8e6fb4718f34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731238957861
+status: 3
+tags: []
+user_id: rishub.jha
