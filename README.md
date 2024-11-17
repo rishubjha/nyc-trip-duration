@@ -1,7 +1,7 @@
 nyc trip duration
 ==============================
 
-An ml project to predict the trip duration for nyc taxi service..
+An ml project to predict the trip duration for nyc taxi service...
 
 Project Organization
 ------------
