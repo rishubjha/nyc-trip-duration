@@ -80,6 +80,7 @@ jobs:
           ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY_NAME }}
           IMAGE_TAG: latest
         run: |
+          aws ecr get-login-password --region
           docker login -u AWS -p $(aws ecr get-login-password --region eu-north-1) 390402569648.dkr.ecr.eu-north-1.amazonaws.com/trip-duration
           sudo docker pull $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
       
