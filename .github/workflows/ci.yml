@@ -51,6 +51,7 @@ jobs:
           ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY_NAME }}
           IMAGE_TAG: latest
         run: |
+          echo "$IMAGE_TAG"
           # Build a docker container and
           # push it to ECR so that it can
           # be deployed to ECS.
@@ -79,6 +80,7 @@ jobs:
           ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY_NAME }}
           IMAGE_TAG: latest
         run: |
+          aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin 390402569648.dkr.ecr.eu-north-1.amazonaws.com/trip-duration
           sudo docker pull $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
       
       - name: Delete Previous Container
